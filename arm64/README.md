@@ -5,11 +5,3 @@ docker buildx build --platform linux/arm64 -t prnewsio/clickhouse:latest.arm --f
 docker login -u="\$DOCKER_USERNAME" -p="\$DOCKER_PASSWORD"
 docker push prnewsio/clickhouse:latest.arm
 ```
-
-### Run with docker-compose
-
-```
-...
-    image: prnewsio/clickhouse:latest
-...      
-```
